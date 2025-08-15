@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Get the directory where this script is located
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# Run tests from the tests directory
+cd "$SCRIPT_DIR/tests" && lua tests.lua
