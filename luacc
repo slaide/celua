@@ -1,7 +1,0 @@
-#!/bin/bash
-
-# Get the directory where this script is located
-SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-
-# Run the CLI from the src directory
-cd "$SCRIPT_DIR/src" && lua luacc.lua "$@"
